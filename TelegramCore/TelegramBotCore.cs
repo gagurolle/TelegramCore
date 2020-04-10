@@ -14,9 +14,9 @@ namespace TelegramCore
         const string Version = "1.1";
         protected static string fileName_chats = "chat_id_list.txt";
         protected static string fileName_config = "config.ini";
-        protected static int admin_chat_id = 443644346;
-        static HttpToSocks5Proxy proxy = new HttpToSocks5Proxy("148.251.234.93", 1080);
-        protected static ITelegramBotClient botClient = new TelegramBotClient("694440850:AAEoTXdEJb2nTn9lV7ThVRx5qQiVqBFDoKk", proxy) { Timeout = TimeSpan.FromSeconds(100) };
+        protected static int admin_chat_id = "";
+        static HttpToSocks5Proxy proxy = new HttpToSocks5Proxy("ip", 1080);
+        protected static ITelegramBotClient botClient = new TelegramBotClient("telegram_key", proxy) { Timeout = TimeSpan.FromSeconds(100) };
         public static List<int> chat_id_telegram = new List<int>();
 
         protected static int bottom_line = 0;
